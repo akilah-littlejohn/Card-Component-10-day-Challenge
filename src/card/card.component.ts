@@ -13,8 +13,8 @@ import { DataService } from '../data.service';
 })
 export class CardComponent implements OnInit {
   
-  @Input() title: string;
-  @Input() subtitle: string;
+   title: string;
+  subtitle: string;
   userData:any;
   likeButton: boolean = false;
 

@@ -10,12 +10,11 @@ import { provideHttpClient } from '@angular/common/http';
   standalone: true,
   imports: [CommonModule, CardComponent],
   template: `
-<app-card [title]="name" [subtitle]="status"></app-card>
+<app-card></app-card>
   `,
 })
 export class App {
-  name: string = 'Angular';
-  status: string = 'Single';
+
 }
 
 bootstrapApplication(App, {
