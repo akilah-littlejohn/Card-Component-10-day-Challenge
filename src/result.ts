@@ -1,6 +1,6 @@
 import { Info } from "./info";
 
-export interface Reponse {
+export interface Result {
   info: Info;
   results: any[];
 }
