@@ -2,20 +2,22 @@ import 'zone.js/dist/zone';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { bootstrapApplication } from '@angular/platform-browser';
+import { CardComponent } from './card/card.component';
+import { provideHttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'my-app',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,CardComponent],
   template: `
-    <h1>Hello from {{name}}!</h1>
-    <a target="_blank" href="https://angular.io/start">
-      Learn more about Angular 
-    </a>
+<app-card [title]="name" [subtitle]="status"></app-card>
   `,
 })
 export class App {
-  name = 'Angular';
+  name:string = 'Angular';
+  status:string = 'Single'
 }
 
-bootstrapApplication(App);
+bootstrapApplication(App, {
+  providers:[provideHttpClient()]
+});
