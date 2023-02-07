@@ -8,9 +8,11 @@
   <article>
     <ng-content selector="card-content"></ng-content>
   </article>
-  <button *ngIf='!likeButton' mat-stroked-button color="primary">Heart Them</button>
-  <button *ngIf='likeButton' mat-icon-button>
-  <mat-icon>favorite</mat-icon>
-</button>
-  <footer></footer>
+  <button *ngIf="!likeButton" mat-stroked-button color="primary">
+    Heart Them
+  </button>
+  <button *ngIf="likeButton" mat-icon-button>
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <footer>Copy Right 2023</footer>
 </section>
