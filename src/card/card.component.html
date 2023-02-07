@@ -1,12 +1,15 @@
 <section>
-
   <header>
-    <h1>{{title}}</h1>
-    <h2>{{subtitle}}</h2>
+    <h1>{{ title }}</h1>
+    <h2>{{ subtitle }}</h2>
   </header>
-  <img [src]="" alt="">
+  <img [src]="" alt="" />
   <article>
-  <ng-content selector="card-content"></ng-content>
+    <ng-content selector="card-content"></ng-content>
   </article>
-  <button></button>
+  <button mat-stroked-button color="primary">Heart Them</button>
+  <button *ngIf='likeButton' mat-icon-button>
+  <mat-icon>favorite</mat-icon>
+</button>
+  <footer></footer>
 </section>

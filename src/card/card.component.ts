@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -7,7 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css'],
   standalone: true,
-  imports: [MatIconModule, MatButtonModule],
+  imports: [CommonModule, MatIconModule, MatButtonModule],
 })
 export class CardComponent implements OnInit {
   @Input() title: string;
