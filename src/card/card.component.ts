@@ -20,6 +20,10 @@ export class CardComponent implements OnInit {
 
   constructor(private api:DataService) {}
   ngOnInit() {
-    this.userData = this.api.getUser()
+    this.api.getUser().subscribe(
+      data => {this.userData = data.results
+      console.log(this.userData)
+      }
+    )
   }
 }
