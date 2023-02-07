@@ -12,18 +12,16 @@ import { DataService } from '../data.service';
   imports: [CommonModule, MatIconModule, MatButtonModule],
 })
 export class CardComponent implements OnInit {
-  
-   title: string;
+  title: string;
   subtitle: string;
-  userData:any;
+  userData: any;
   likeButton: boolean = false;
 
-  constructor(private api:DataService) {}
+  constructor(private api: DataService) {}
   ngOnInit() {
-    this.api.getUser().subscribe(
-      data => {this.userData = data.results
-      console.log(this.userData)
-      }
-    )
+    this.api.getUser().subscribe((data) => {
+      this.userData = data.results;
+      console.log(this.userData);
+    });
   }
 }
