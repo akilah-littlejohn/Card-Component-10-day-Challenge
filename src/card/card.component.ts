@@ -2,9 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { Observable } from 'rxjs';
 import { DataService } from '../data.service';
-import { User } from '../user';
 
 @Component({
   selector: 'app-card',
@@ -22,6 +20,6 @@ export class CardComponent implements OnInit {
 
   constructor(private api:DataService) {}
   ngOnInit() {
-    this.userData = this.api.getUser
+    this.userData = this.api.getUser()
   }
 }

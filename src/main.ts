@@ -8,16 +8,16 @@ import { provideHttpClient } from '@angular/common/http';
 @Component({
   selector: 'my-app',
   standalone: true,
-  imports: [CommonModule,CardComponent],
+  imports: [CommonModule, CardComponent],
   template: `
 <app-card [title]="name" [subtitle]="status"></app-card>
   `,
 })
 export class App {
-  name:string = 'Angular';
-  status:string = 'Single'
+  name: string = 'Angular';
+  status: string = 'Single';
 }
 
 bootstrapApplication(App, {
-  providers:[provideHttpClient()]
+  providers: [provideHttpClient()],
 });
