@@ -1,17 +1,21 @@
 <section>
-  <p><mat-icon>circle</mat-icon> Status: Online</p>
-  <header>
-    <h1>{{ title }}</h1>
-    <h2>{{ subtitle }}</h2>
-  </header>
-  <article>
-    <ng-content selector="card-content"></ng-content>
-  </article>
-  <button *ngIf="!likeButton" mat-stroked-button color="primary">
-    Heart Them <mat-icon>favorite</mat-icon>
-  </button>
-  <button *ngIf="likeButton" mat-stroked-button color="primary">
-    Hearted <mat-icon>favorite</mat-icon>
-  </button>
-  <footer></footer>
+  <div>
+    <p><mat-icon>circle</mat-icon> Status: Online</p>
+    <header>
+      <h1>{{ title }}</h1>
+      <h2>{{ subtitle }}</h2>
+    </header>
+    <article>
+      <ng-content selector="card-content"></ng-content>
+    </article>
+    <footer>
+      <button *ngIf="!likeButton" mat-stroked-button color="primary">
+        Heart Them <mat-icon>favorite</mat-icon>
+      </button>
+      <button *ngIf="likeButton" mat-stroked-button color="primary">
+        Hearted <mat-icon>favorite</mat-icon>
+      </button>
+    </footer>
+  </div>
+
 </section>

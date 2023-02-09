@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { CardComponent } from './card/card.component';
 import { provideHttpClient } from '@angular/common/http';
-import { DataService } from './data.service';
 import { ProfileComponent } from './profile/profile.component';
 
 @Component({
@@ -18,7 +17,6 @@ import { ProfileComponent } from './profile/profile.component';
   `,
 })
 export class App {
-private api: DataService
 }
 
 bootstrapApplication(App, {
