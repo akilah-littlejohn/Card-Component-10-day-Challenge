@@ -1,5 +1,5 @@
 <section>
-  <p>Status: Online |<mat-icon>circle</mat-icon></p>
+  <p><mat-icon>circle</mat-icon> Status: Online</p>
   <header>
     <h1>{{ title }}</h1>
     <h2>{{ subtitle }}</h2>
@@ -10,8 +10,8 @@
   <button *ngIf="!likeButton" mat-stroked-button color="primary">
     Heart Them <mat-icon>favorite</mat-icon>
   </button>
-  <button *ngIf="likeButton" mat-icon-button>
-   Hearted <mat-icon>favorite</mat-icon>
+  <button *ngIf="likeButton" mat-stroked-button color="primary">
+    Hearted <mat-icon>favorite</mat-icon>
   </button>
-  <footer>Copy Right 2023</footer>
+  <footer></footer>
 </section>
