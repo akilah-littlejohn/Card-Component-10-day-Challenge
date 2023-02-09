@@ -13,8 +13,11 @@ import { MatIconModule } from '@angular/material/icon';
 export class CardComponent implements OnInit {
   title: string;
   subtitle: string;
-  likeButton: boolean = true;
-
+  likeButton: boolean = false;
+   likeButtonText = {
+     hearted:'Hearted',
+     heartThem:'Heart Them'
+   }
   constructor() {}
   ngOnInit() {
  

@@ -10,10 +10,7 @@
     </article>
     <footer>
       <button *ngIf="!likeButton" mat-stroked-button color="primary">
-        Heart Them <mat-icon>favorite</mat-icon>
-      </button>
-      <button *ngIf="likeButton" mat-stroked-button color="primary">
-        Hearted <mat-icon>favorite</mat-icon>
+        {{ likeButtonText.heartThem }} <mat-icon>favorite</mat-icon>
       </button>
     </footer>
   </div>
