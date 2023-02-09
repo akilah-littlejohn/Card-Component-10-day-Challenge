@@ -11,7 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
   imports: [CommonModule, MatIconModule, MatButtonModule],
 })
 export class CardComponent implements OnInit {
-  title: string = 'Profile Status:';
+  title: string = 'InstaDate';
   subtitle: string = 'Member Since 2005';
   likeButton: boolean = false;
   likeButtonText = {
