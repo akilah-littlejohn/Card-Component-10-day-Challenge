@@ -5,13 +5,16 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { CardComponent } from './card/card.component';
 import { provideHttpClient } from '@angular/common/http';
 import { DataService } from './data.service';
+import { ProfileComponent } from './profile/profile.component';
 
 @Component({
   selector: 'my-app',
   standalone: true,
-  imports: [CommonModule, CardComponent],
+  imports: [CommonModule, CardComponent, ProfileComponent],
   template: `
-<app-card></app-card>
+<app-card>
+<app-profile></app-profile>
+</app-card>
   `,
 })
 export class App {
