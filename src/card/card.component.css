@@ -1,5 +1,17 @@
-section {
+
+section{
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div {
   box-shadow: 1px 2px 20px #eee;
   padding: 20px;
   width: 300px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }

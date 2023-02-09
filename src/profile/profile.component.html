@@ -1,6 +1,6 @@
 <section *ngFor="let user of userData">
   <img [src]="user.imageUrl" alt="">
   <h1>{{ user.username }}</h1>
-  <p>{{ user.firstName }} {{ user.lastName }}</p>
+  <p class="firstname">{{ user.firstName }} {{ user.lastName }}</p>
   <p>{{user.dateOfBirth | date}}</p>
 </section>

@@ -3,3 +3,7 @@ img {
   margin: 1em;
   border-radius: 100%;
 }
+
+.firstname {
+  color: lightgray;
+}
