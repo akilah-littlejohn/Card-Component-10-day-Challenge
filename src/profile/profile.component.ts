@@ -1,12 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
-import { Result } from '../result';
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css'], 
-  standalone:true
+  standalone:true,
+  imports:[CommonModule]
 })
 export class ProfileComponent implements OnInit {
   userData: any[];
@@ -15,7 +16,8 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
     this.api.getUser().subscribe((data) => {
       this.userData = data.results;
-      console.log(this.userData);
+      console.log(this.userData)
+  
     });
   }
 
