@@ -3,16 +3,16 @@
     <header>
       <h1>{{ title }}</h1>
       <h2>{{ subtitle }}</h2>
-      <p>Online <mat-icon>circle</mat-icon></p>
+      <button *ngIf="!likeButton" mat-stroked-button color="primary">
+        {{ likeButtonText.heartThem }} <mat-icon>plus_one</mat-icon>
+      </button>
+      <ng-template></ng-template>
     </header>
     <article>
       <ng-content selector="card-content"></ng-content>
     </article>
     <footer>
-      <button *ngIf="!likeButton" mat-stroked-button color="primary">
-        {{ likeButtonText.heartThem }} <mat-icon>favorite</mat-icon>
-      </button>
-      <ng-template></ng-template>
+    <mat-icon>favorite</mat-icon>
     </footer>
   </div>
 </section>

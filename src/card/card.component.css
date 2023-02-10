@@ -5,6 +5,10 @@ section{
   margin-top: 3em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+header{
+  display: flex;
+  flex-direction: column;
+}
 div {
   box-shadow: 1px 2px 20px #eee;
   padding: 20px;
