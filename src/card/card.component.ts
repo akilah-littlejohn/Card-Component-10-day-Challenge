@@ -18,6 +18,7 @@ export class CardComponent implements OnInit {
     hearted: 'Hearted',
     heartThem: 'Heart Them',
   };
+  @Input() count:number = 1
   constructor() {}
   ngOnInit() {}
 }
