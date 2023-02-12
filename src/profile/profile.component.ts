@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 
 @Component({
@@ -11,6 +11,7 @@ import { DataService } from '../data.service';
 })
 export class ProfileComponent implements OnInit {
   userData: any[];
+  @Input() headerTitle:string;
   constructor(private api: DataService) { }
 
   ngOnInit() {

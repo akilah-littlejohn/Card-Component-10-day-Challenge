@@ -12,11 +12,12 @@ import { ProfileComponent } from './profile/profile.component';
   imports: [CommonModule, CardComponent, ProfileComponent],
   template: `
 <app-card>
-<app-profile></app-profile>
+<app-profile [headerTitle]='appTitle'></app-profile>
 </app-card>
   `,
 })
 export class App {
+  appTitle = "Profile"
 }
 
 bootstrapApplication(App, {
