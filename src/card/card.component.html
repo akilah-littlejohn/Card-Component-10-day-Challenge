@@ -3,10 +3,14 @@
     <header>
       <h1 class="center">{{ title }}</h1>
       <h2 class="center">{{ subtitle }}</h2>
-      <button mat-stroked-button color="primary">
-        Heart Me<mat-icon>plus_one</mat-icon>
+      
+      <button (click)="heartButton = !heartButton" mat-stroked-button color="primary" >
+       <mat-icon *ngIf='!heartButton' > {{  addHearts }}</mat-icon> 
+       Heart Them
       </button>
-      <ng-template></ng-template>
+      <ng-template #Hearted>
+
+      </ng-template>
     </header>
     <article>
       <ng-content selector="card-content"></ng-content>

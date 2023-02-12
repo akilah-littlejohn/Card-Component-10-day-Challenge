@@ -22,4 +22,6 @@ export class CardComponent implements OnInit {
   @Input() count: number = 0;
   constructor() {}
   ngOnInit() {}
+
+  
 }
