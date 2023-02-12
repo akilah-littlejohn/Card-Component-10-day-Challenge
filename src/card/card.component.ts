@@ -15,7 +15,7 @@ export class CardComponent implements OnInit {
   subtitle: string = 'Member Since 2005';
   hearts: number = 0;
   addHearts: string = 'plus_one';
-  minusHearts: string = 'minus_one';
+  minusHearts: string = 'delete';
 
   heartButton: boolean = false;
 
@@ -23,5 +23,5 @@ export class CardComponent implements OnInit {
   constructor() {}
   ngOnInit() {}
 
-  
+
 }

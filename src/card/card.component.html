@@ -5,12 +5,9 @@
       <h2 class="center">{{ subtitle }}</h2>
       
       <button (click)="heartButton = !heartButton" mat-stroked-button color="primary" >
-       <mat-icon *ngIf='!heartButton' > {{  addHearts }}</mat-icon> 
-       Heart Them
+       <mat-icon> {{ heartButton ? minusHearts: addHearts }}</mat-icon> 
+       {{ heartButton ? "Remove Heart ": "Heart Them" }}
       </button>
-      <ng-template #Hearted>
-
-      </ng-template>
     </header>
     <article>
       <ng-content selector="card-content"></ng-content>
