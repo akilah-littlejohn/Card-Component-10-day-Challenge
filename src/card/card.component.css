@@ -1,5 +1,9 @@
-.icon {
-  color:red;
+.addHearts {
+  color:pink;
+}
+
+.minusHearts{
+  color:lightgrey;
 }
 section{
   display: flex;

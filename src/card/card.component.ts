@@ -24,4 +24,13 @@ export class CardComponent implements OnInit {
   ngOnInit() {}
 
 
+public toggleHeart(): void {
+  this.heartButton = !this.heartButton;
+  if(this.heartButton){
+    this.hearts = this.hearts + 1
+  } else {
+    this.hearts = this.hearts - 1
+  }
+}
+
 }

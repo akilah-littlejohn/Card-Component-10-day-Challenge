@@ -4,17 +4,17 @@
       <h1 class="center">{{ title }}</h1>
       <h2 class="center">{{ subtitle }}</h2>
       
-      <button (click)="heartButton = !heartButton" mat-stroked-button color="primary" >
-       <mat-icon> {{ heartButton ? minusHearts: addHearts }}</mat-icon> 
-       {{ heartButton ? "Remove Heart ": "Heart Them" }}
+      <button (click)="toggleHeart()" mat-stroked-button color="primary">
+        <mat-icon ></mat-icon> 
+        {{ heartButton ? 'Remove Heart' : 'Heart Them' }}
       </button>
     </header>
     <article>
       <ng-content selector="card-content"></ng-content>
     </article>
     <footer>
-    <mat-icon>favorite</mat-icon>
-    <span *ngIf = 'hearts > 1'> {{ hearts }}</span>
+    <mat-icon [ngClass]="{ 'minusHearts': !heartButton, 'addHearts': heartButton }">favorite</mat-icon>
+    <span *ngIf = 'hearts  === 1'> {{ hearts }}</span>
     </footer>
   </div>
 </section>
