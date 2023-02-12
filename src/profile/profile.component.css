@@ -3,7 +3,10 @@
   color: lightgray;
   font-size: smaller;
 }
-
+h1 {
+  display: flex;
+  justify-content: center;
+}
 img {
   float: left;
   margin: 1em;
