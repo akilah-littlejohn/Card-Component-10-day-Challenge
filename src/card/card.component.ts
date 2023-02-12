@@ -13,12 +13,13 @@ import { MatIconModule } from '@angular/material/icon';
 export class CardComponent implements OnInit {
   title: string = 'InstaDate';
   subtitle: string = 'Member Since 2005';
-  likeButton: boolean = false;
-  likeButtonText = {
-    hearted: 'Hearted',
-    heartThem: 'Heart Them',
-  };
-  @Input() count:number = 0
+  hearts: number = 0;
+  addHearts: string = 'plus_one';
+  minusHearts: string = 'minus_one';
+
+  heartButton: boolean = false;
+
+  @Input() count: number = 0;
   constructor() {}
   ngOnInit() {}
 }
